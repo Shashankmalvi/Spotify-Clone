@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: black; 
+    color: white; 
+}
+
+
+
+.left{
+    width: 25vw;
+}
+
+.right{
+    width: 75vw;
+    max-height: 100vh;
+    overflow: scroll;
+    
+}
+
+.home{
+    padding:38px;
+}
+
+.library{
+    min-height: 67vh;
+    padding: 15px;
+    position: relative;
+}
+
+.library .lib{
+    margin-left: 19px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 20px;
+list-style: none;
+padding-top: 14px;
+font-weight: bold;
+
+}
+
+.heading{
+    display: flex;
+    width: 100%;
+    gap: 17px;
+list-style: none;
+padding-top: 14px; 
+font-weight: bold;
+padding: 23px 14px;
+align-items: center;
+ 
+}
+
+.heading img{
+    width: 25px;
+    /* align-items: center; */
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.footer a{
+    color: gray;
+}
+
+.right{
+    margin: 5px 0;
+    position: relative;
+    position: relative;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 54px;
+}
+
+.header > *{
+    padding: 11px;
+    
+}
+
+.spotify-playlist{
+    padding: 6px;
+    font-size: 12px;
+    
+}
+
+.spotify-playlist .card{
+    width: 140px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#121212 ;  
+      /* #252525 */
+    margin: 25px;
+    position: relative;
+}
+
+.card > *{
+    padding-top: 3px;
+}
+
+.cardcontainer .card:hover{
+     background-color: #252525;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 35%;
+    height: 65%;
+}
+
+.cardcontainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+.picture{
+height: 167px;
+}
+
+.play{
+    width: 47px;
+    position: absolute;
+    right: 20px;
+    top: 109px;
+    opacity: 0;
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.button > *{
+margin: 0 12px;
+}
+
+.signupbtn{
+background-color: black;
+color: rgb(156,148,148);
+font-weight: bold;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 16px;
+}
+
+.signupbtn:hover{
+    font-size: 17px;
+    color: white;
+}
+
+.loginbtn{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.playbar{
+    position: absolute;
+    bottom: -43;
+    background-color:rgb(23 38 40);
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    /* display: flex; */
+    position: fixed;
+    bottom: 20px;
+}
+
+.songbuttons{
+    /* width: 20px; */
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.img-play{
+    width: 1.2rem;
+}
+
+.songlist ul{
+    padding: 0 10px;
+}
+
+.songlist ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+    padding: 12px 4px;
+    border: 1px solid rgb(44, 43, 43);
+    margin-bottom: 12px;
+    /* width: 115%; */
+    border-radius: 5px;
+    justify-content: space-between;
+    background-color: #252525;
+    /* #44535b75 */
+}
+
+.songlist .songinfo{
+    justify-content: center;
+    font-size: 14px;
+    width: 344px;
+}
+ 
+.songlist{
+    height: 403px;
+    overflow: auto;
+    margin-bottom: 34px;
+}
+
+.splay{
+    padding-bottom: 10px;
+}
+
+.seekbar{
+    height: 3px;
+    width: 96%;
+    /* border: 1px solid white; */
+    background: white;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 13px;
+    background-color:white;
+    position: relative;
+    bottom: 4px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.songinfoPlay .songtime{
+    padding: 0 12px;
+}
+
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 111px;
+}
+
+.volume{
+    width: 14px;
+}
+
+.volume:hover::after{
+    content:"iki";
+}
